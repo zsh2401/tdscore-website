@@ -48,17 +48,17 @@ module.exports = {
                     title: '入门手册',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
-                        '/dev/docs/',
-                        '/dev/docs/beginner/',
-                        '/dev/docs/beginner/project-structure/',
-                        '/dev/docs/beginner/install-dev-env/',
-                        '/dev/docs/beginner/getting-started/',
-                        '/dev/docs/beginner/extinfo/',
-                        '/dev/docs/beginner/awesome-api/',
-                        '/dev/docs/beginner/with-device/',
-                        '/dev/docs/beginner/leaf-extension/',
-                        '/dev/docs/beginner/leaf-ui/',
-                        '/dev/docs/beginner/example-extensions/'
+                        '/docs/',
+                        // '/dev/docs/beginner/',
+                        // '/dev/docs/beginner/project-structure/',
+                        // '/dev/docs/beginner/install-dev-env/',
+                        // '/dev/docs/beginner/getting-started/',
+                        // '/dev/docs/beginner/extinfo/',
+                        // '/dev/docs/beginner/awesome-api/',
+                        // '/dev/docs/beginner/with-device/',
+                        // '/dev/docs/beginner/leaf-extension/',
+                        // '/dev/docs/beginner/leaf-ui/',
+                        // '/dev/docs/beginner/example-extensions/'
                     ]
                 }
             ]

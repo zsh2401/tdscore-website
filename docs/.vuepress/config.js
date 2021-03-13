@@ -13,6 +13,7 @@ module.exports = {
             //     text: 'Tag'      // 默认文案 “标签”
             // }
         },
+        logo: '/icon.png',
         noFoundPageByTencent: false,
         evergreen: false,
         // logo: 'icon.png',
@@ -22,8 +23,7 @@ module.exports = {
                 icon: "reco-home",
                 link: '/'
             },
-            { text: '下载', link: '/download/', icon: "reco-other" },
-            { text: '开发文档', link: '/docs/', icon: "reco-document" },
+            { text: '文档', link: '/docs/guide/introduction/', icon: "reco-document" },
             { text: '论文', link: '/paper/', icon: "reco-document" },
             {
                 text: '关于',
@@ -45,20 +45,41 @@ module.exports = {
         sidebar: {
             "/docs": [
                 {
-                    title: '入门手册',   // 必要的
+                    title: '入门',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
-                        '/docs/',
-                        // '/dev/docs/beginner/',
-                        // '/dev/docs/beginner/project-structure/',
-                        // '/dev/docs/beginner/install-dev-env/',
-                        // '/dev/docs/beginner/getting-started/',
-                        // '/dev/docs/beginner/extinfo/',
-                        // '/dev/docs/beginner/awesome-api/',
-                        // '/dev/docs/beginner/with-device/',
-                        // '/dev/docs/beginner/leaf-extension/',
-                        // '/dev/docs/beginner/leaf-ui/',
-                        // '/dev/docs/beginner/example-extensions/'
+                        '/docs/guide/introduction/',
+                        '/docs/guide/quick-start/',
+                        '/docs/guide/installation/',
+                    ]
+                },
+                {
+                    title: '基建',   // 必要的
+                    sidebarDepth: 2,    // 可选的, 默认值是 1
+                    children: [
+                        '/docs/infrastructure/',
+                        '/docs/infrastructure/dsHashCode/',
+                    ]
+                },
+                {
+                    title: '数据结构',   // 必要的
+                    sidebarDepth: 2,    // 可选的, 默认值是 1
+                    children: [
+                        '/docs/data-structure/',
+                    ]
+                },
+                {
+                    title: '算法',   // 必要的
+                    sidebarDepth: 2,    // 可选的, 默认值是 1
+                    children: [
+                        '/docs/algorithms/',
+                    ]
+                },
+                {
+                    title: '数学',   // 必要的
+                    sidebarDepth: 2,    // 可选的, 默认值是 1
+                    children: [
+                        '/docs/mathematics/',
                     ]
                 }
             ]

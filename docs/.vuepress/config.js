@@ -1,6 +1,16 @@
 module.exports = {
     theme: 'reco',
     title: "TDSCore",
+    head: [
+        // ['script', { src: 'https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js' }],
+        // ['script', { src: 'https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js' }],
+        // ['script', { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' }],
+        // ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
+        // ['script', { src: 'https://embed.runkit.com' }]
+    ],
+    plugins: [
+        // 'demo-block'
+    ],
     themeConfig: {
         // 博客配置
         blogConfig: {

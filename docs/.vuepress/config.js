@@ -40,7 +40,7 @@ module.exports = {
                 icon: "reco-eye",
                 items: [
                     { text: '关于', link: '/about/' },
-                    { text: '无偿捐赠', link: '/donate/' },
+                    // { text: '无偿捐赠', link: '/donate/' },
                 ]
             },
             {

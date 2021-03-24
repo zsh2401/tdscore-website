@@ -1,35 +1,44 @@
 ---
 title: 安装
 ---
+# 获取
+**NPM**
 
-# Node.js🟢
 ```sh
-npm install tdscore
-#or
-yarn add tdscore
+npm i tdscore
 ```
-## ES Module
+**CDN**
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/tdscore/dist/tdscore.min.js"></script>
+```
+**直接下载**
+
+[下载最新版本](https://cdn.jsdelivr.net/npm/tdscore/dist/tdscore.min.js)
+
+# 引入
+**ES Module**
 ```typescript
 import {dsHashCode} from "tdscore"
 dsHashCode(1); // 1
 ```
 
-## CommonJS
+**CommonJS**
 ```javascript
 const dsHashCode = require("tdscore").dsHashCode;
 dsHashCode(1); // 1
 ```
-## Tree Shaking
+
+**Tree Shaking**
+
 Webpack可以通过`Tree Shaking`技术将您的引入进行按需编译，大幅减小产出物的体积。
 ```typescript
 import dsHashCode from "tdscore/lib/dsHashCode"
 dsHashCode(1); // 1
 ```
 
-# 浏览器🌌
+**浏览器🌌**
 ```html
-<!-- Latest Version -->
-<script src="https://cdn.jsdelivr.net/npm/tdscore/dist/tdscore.min.js"></script>
 <script>
     tdscore.dsHashCode(1); //1
 </script>

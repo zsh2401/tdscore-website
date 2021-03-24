@@ -29,13 +29,3 @@ jobs:
         build_dir: docs/.vuepress/dist
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-    - name: Deploy to Coding Pages
-      run: node deploy.js
-      env:
-        FULL_REPO: ${{ secrets.CODING_REPO }}
-        
-        
-        
-        
-        

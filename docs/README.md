@@ -40,4 +40,4 @@ hashMap.mapPut("a",1);
 console.log(hashMap.mapGet("a")); // 1
 ```
 # 在线试用
-[RunKit for TDSCore](https://npm.runkit.com/tdscore)
+[Try TDSCore on RunKit](https://npm.runkit.com/tdscore)

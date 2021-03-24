@@ -34,7 +34,7 @@ module.exports = {
                 link: '/'
             },
             { text: '文档', link: '/docs/guide/introduction/', icon: "reco-document" },
-            { text: '论文', link: '/paper/', icon: "reco-document" },
+            { text: '研究', link: '/study/paper/', icon: "reco-document" },
             {
                 text: '关于',
                 icon: "reco-eye",
@@ -53,6 +53,23 @@ module.exports = {
             }
         ],
         sidebar: {
+            "/study":[
+                {
+                    title: `论文`,   // 必要的
+                    sidebarDepth: 2,    // 可选的, 默认值是 1
+                    children: [
+                        '/study/paper/',
+                    ]
+                },
+                {
+                    title: `参考`,   // 必要的
+                    sidebarDepth: 2,    // 可选的, 默认值是 1
+                    children: [
+                        '/study/ref/',
+                        '/study/ref-material/'
+                    ]
+                },
+            ],
             "/docs": [
                 {
                     title: '入门',   // 必要的
@@ -74,11 +91,9 @@ module.exports = {
                         '/docs/infrastructure/DSArray/',
                         '/docs/infrastructure/IArrayLike/',
                         '/docs/infrastructure/DSNumber/',
-                        '/docs/infrastructure/Lazy/',
                         '/docs/infrastructure/DSEvent/',
-                        '/docs/infrastructure/Action/',
-                        '/docs/infrastructure/Func/',
-                        '/docs/infrastructure/Optional/',
+                        '/docs/infrastructure/ActionFunc/',
+                        '/docs/infrastructure/Lazy/',
                     ]
                 },
                 {

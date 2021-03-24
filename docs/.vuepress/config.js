@@ -67,15 +67,31 @@ module.exports = {
                     title: '基建',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
-                        '/docs/infrastructure/',
+                        // '/docs/infrastructure/',
                         '/docs/infrastructure/dsHashCode/',
+                        '/docs/infrastructure/dsEquals/',
+                        '/docs/infrastructure/DSObject/',
+                        '/docs/infrastructure/DSArray/',
+                        '/docs/infrastructure/IArrayLike/',
+                        '/docs/infrastructure/DSNumber/',
+                        '/docs/infrastructure/Lazy/',
+                        '/docs/infrastructure/DSEvent/',
+                        '/docs/infrastructure/Action/',
+                        '/docs/infrastructure/Func/',
+                        '/docs/infrastructure/Optional/',
                     ]
                 },
                 {
                     title: '数据结构',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
-                        '/docs/data-structure/',
+                        '/docs/data-structure/ArrayList/',
+                        '/docs/data-structure/LinkedList/',
+                        '/docs/data-structure/GList/',
+                        '/docs/data-structure/BitSpan/',
+                        '/docs/data-structure/HashMap/',
+                        '/docs/data-structure/Tree/',
+                        '/docs/data-structure/Graph/',
                     ]
                 },
                 {
@@ -90,6 +106,8 @@ module.exports = {
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
                         '/docs/mathematics/',
+                        '/docs/mathematics/fn/',
+                        '/docs/mathematics/martix/',
                     ]
                 }
             ]

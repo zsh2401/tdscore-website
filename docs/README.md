@@ -41,7 +41,3 @@ console.log(hashMap.mapGet("a")); // 1
 ```
 # 在线试用
 [RunKit for TDSCore](https://npm.runkit.com/tdscore)
-
-# 贡献者
-
-![](https://contrib.rocks/image?repo=zsh2401/tdscore)

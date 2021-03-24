@@ -8,7 +8,7 @@ TDSCore的编译成品仅使用ECMAScript 5特性（被全球	97.6%的浏览器�
 
 |  IE   | Edge  | Firefox | Chrome | Safari| Node.js | Quick.js |
 |  ----  | ----  | ---- | ---- | ---- |  ---- | ---- | 
-| >=10  | >=12 | >=21 | >= 23 | >= 6 | >= 6.4.0 | 1st version |
+| >=10  | >=12 | >=21 | >= 23 | >= 6 | >= 6.4.0 | Any |
 
 TDSCore不依赖于任何JS平台特性，换句话说，可以运行在任何支持ECMA Script 5的运行时中。
 
@@ -23,3 +23,7 @@ TDSCore不依赖于任何JS平台特性，换句话说，可以运行在任何�
 
 # 开放源代码
 目前，TDSCore以[MulanPSL2](http://license.coscl.org.cn/MulanPSL2)协议在Github进行开源：[zsh2401/tdscore](https://github.com/zsh2401/tdscore)
+
+# 贡献者
+
+![](https://contrib.rocks/image?repo=zsh2401/tdscore)

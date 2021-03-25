@@ -100,6 +100,7 @@ module.exports = {
                     title: '数据结构',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
+                        '/docs/data-structure/Interfaces/',
                         '/docs/data-structure/ArrayList/',
                         '/docs/data-structure/LinkedList/',
                         '/docs/data-structure/GList/',

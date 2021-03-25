@@ -74,4 +74,4 @@ dsHashCode(a); // 2401
 :::
 ## 污染性
 对于实现了`IHashCodeGettable`的对象以及`Primitive Type`，`dsHashCode`在计算过程中不会留下任何痕迹。   
-但对于其它对象，为了实现`哈希码在整个生命周期不变`这一点，算法不得不在对象中留下痕迹。在`tdscore v0.1.17中`，这个痕迹是一个闭包函数，您可以阅读[相关源代码](https://github.com/zsh2401/tdscore/blob/master/src/util/hash/weekhash.ts)进行进一步了解。
+但对于其它对象，为了实现`哈希码在整个生命周期不变`这一点，算法不得不在对象中留下痕迹。在`tdscore v0.1.17中`，这个痕迹是一个闭包函数，您可以阅读[相关源代码](https://github.com/zsh2401/tdscore/blob/master/src/util/hash/hashCodeForAny.ts)进行进一步了解。

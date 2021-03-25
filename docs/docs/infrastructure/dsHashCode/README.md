@@ -62,12 +62,19 @@ dsHashCode(new A()); // 2401
 ```
 事实上，有`ECMA Script`的灵活性，当您使用`JavaScript`时，可以用如下方法自定义哈希算法：
 ```javascript
-const a ={}
+const a = {}
 a.getHashCode = function(){
     return 2401;
 }
 
 dsHashCode(a); // 2401
+
+//你甚至可以...
+const f = function(){
+    console.log(a)
+}
+f.getHashCode = ()=> 2402
+dsHashCode(f) // 2402
 ```
 :::tip
 `DSObject`实现了`IHashCodeGettable`接口。

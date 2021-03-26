@@ -84,7 +84,6 @@ module.exports = {
                     title: '基建',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
-                        // '/docs/infrastructure/',
                         '/docs/infrastructure/dsHashCode/',
                         '/docs/infrastructure/dsEquals/',
                         '/docs/infrastructure/DSObject/',
@@ -120,7 +119,7 @@ module.exports = {
                         {
                             title: "非线性结构",
                             children: [
-                                '/docs/data-structure/HashMap/',
+                                '/docs/data-structure/map/HashMap/',
                                 '/docs/data-structure/tree/',
                                 '/docs/data-structure/graph/',
                             ]
@@ -129,8 +128,6 @@ module.exports = {
                             title: "迭代",
                             children: [
                                 '/docs/data-structure/iterating/',
-                                // '/docs/data-structure/Tree/',
-                                // '/docs/data-structure/Graph/',
                             ]
                         },
                     ]

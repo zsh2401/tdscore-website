@@ -102,8 +102,8 @@ module.exports = {
                         {
                             title: "接口定义",
                             children: [
-                                '/docs/data-structure/Interfaces/ICollection',
-                                '/docs/data-structure/Interfaces/IList',
+                                '/docs/data-structure/interfaces/ICollection/',
+                                '/docs/data-structure/interfaces/IList/',
                             ]
                         },
                         {

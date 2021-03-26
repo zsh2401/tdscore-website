@@ -1,10 +1,6 @@
 ---
-title: 列表
+title: ArrayList<E> 线性表
 ---
-# `IList<E>`
-`IList<E>`接口定义了一个列表的基础行为。`IList<E>`接口还继承自`IColletion<E>`接口
-对于`IList<E>`接口，TDSCore中有以下几个经典的数据结构实现：
-# `ArrayList<E>`
 [查看源代码](https://github.com/zsh2401/tdscore/blob/master/src/data-structure/linear/ArrayList.ts)
 [测试用例](https://github.com/zsh2401/tdscore/blob/master/tests/data-structure/linear/ArrayList.test.ts)
 
@@ -22,4 +18,17 @@ import { ArrayList } from "tdscore"
 const ArrayList = require("tdscore").ArrayList
 ```
 
-# 方法
+# 示例
+```typescript
+const list = new ArrayList<number>()
+
+list.add(1)
+list.listGet(0) //1
+
+list.listSet(0,2)
+list.listGet(0) //2
+
+list.collectionRemove(2) //Remove element by element
+// list.listDelete(0) //Remove element by index
+list.listGet(0) //Index out of range
+```

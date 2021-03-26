@@ -1,6 +1,10 @@
 ---
-title: ArrayList<E>（顺序表）
+title: 列表
 ---
+# `IList<E>`
+`IList<E>`接口定义了一个列表的基础行为。`IList<E>`接口还继承自`IColletion<E>`接口
+对于`IList<E>`接口，TDSCore中有以下几个经典的数据结构实现：
+# `ArrayList<E>`
 [查看源代码](https://github.com/zsh2401/tdscore/blob/master/src/data-structure/linear/ArrayList.ts)
 [测试用例](https://github.com/zsh2401/tdscore/blob/master/tests/data-structure/linear/ArrayList.test.ts)
 
@@ -19,10 +23,3 @@ const ArrayList = require("tdscore").ArrayList
 ```
 
 # 方法
-| 方法名 | 使用 |
-| ---- | ---- |
-| `listGet(index:number):E` | 根据下标返回值，如果下标非法，则抛出异常 |
-| `listSet(index:number,value:E)` | 设置指定位置的值，如果下标非法，则抛出异常 |
-| `listAdd(value:E)` | 在列表最后添加一个元素 |
-| `size():number` | 获取列表大小 |
-| `isEmpty(): boolean` | 判断列表是否为空 |

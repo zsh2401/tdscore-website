@@ -53,7 +53,7 @@ module.exports = {
             }
         ],
         sidebar: {
-            "/study":[
+            "/study": [
                 {
                     title: `论文`,   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
@@ -100,14 +100,39 @@ module.exports = {
                     title: '数据结构',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
-                        '/docs/data-structure/Interfaces/',
-                        '/docs/data-structure/ArrayList/',
-                        '/docs/data-structure/LinkedList/',
-                        '/docs/data-structure/GList/',
-                        '/docs/data-structure/BitSpan/',
-                        '/docs/data-structure/HashMap/',
-                        '/docs/data-structure/Tree/',
-                        '/docs/data-structure/Graph/',
+                        {
+                            title: "接口定义",
+                            children: [
+                                '/docs/data-structure/Interfaces/ICollection',
+                                '/docs/data-structure/Interfaces/IList',
+                            ]
+                        },
+                        {
+                            title: "线性结构",
+                            children: [
+                                '/docs/data-structure/linear/ArrayList/',
+                                '/docs/data-structure/linear/LinkedList/',
+                                '/docs/data-structure/linear/GList/',
+                                '/docs/data-structure/linear/BitSpan/',
+                                '/docs/data-structure/linear/UngrowableArrayList/',
+                            ]
+                        },
+                        {
+                            title: "非线性结构",
+                            children: [
+                                '/docs/data-structure/HashMap/',
+                                '/docs/data-structure/tree/',
+                                '/docs/data-structure/graph/',
+                            ]
+                        },
+                        {
+                            title: "迭代",
+                            children: [
+                                '/docs/data-structure/iterating/',
+                                // '/docs/data-structure/Tree/',
+                                // '/docs/data-structure/Graph/',
+                            ]
+                        },
                     ]
                 },
                 {

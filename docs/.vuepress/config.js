@@ -2,15 +2,26 @@ module.exports = {
     theme: 'reco',
     title: "TDSCore",
     head: [
-        // ['script', { src: 'https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js' }],
-        // ['script', { src: 'https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js' }],
-        // ['script', { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' }],
-        // ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
-        // ['script', { src: 'https://embed.runkit.com' }]
+        ['link', { rel: 'icon', href: '/icon.png' }],
+        ['link', { rel: 'manifest', href: '/manifest.json' }],
+        ['meta', { name: 'theme-color', content: '#92CEF7' }],
+        ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'white' }],
+        ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+        ['link', { rel: 'mask-icon', href: '/icon-154x154.svg', color: '#92CEF7' }],
+        ['meta', { name: 'msapplication-TileImage', content: '/icon-512x512.png' }],
+        ['meta', { name: 'msapplication-TileColor', content: '#92CEF7' }]
     ],
-    plugins: [
-        // 'demo-block'
-    ],
+    plugins: {
+        '@vuepress/pwa': {
+            serviceWorker: true,
+            updatePopup: {
+                message: "文档有更新",
+                buttonText: "立刻更新！"
+            }
+        }
+    },
+
     themeConfig: {
         // 博客配置
         blogConfig: {
@@ -106,7 +117,7 @@ module.exports = {
                 {
                     title: '数据结构',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
-                    
+
                     children: [
                         {
                             collapsable: false,
@@ -149,7 +160,7 @@ module.exports = {
                     title: '算法',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
-                        
+
                         '/docs/algorithms/',
                         '/docs/algorithms/sort/',
                         {

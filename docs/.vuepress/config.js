@@ -23,6 +23,11 @@ module.exports = {
             //     text: 'Tag'      // 默认文案 “标签”
             // }
         },
+        valineConfig: {
+            appId: 'qaSn1lMJlYsX4v3eb9u8lFD4-gzGzoHsz',// your appId
+            appKey: 't6NmGFxNT0mbeUHwVRTK0nKc', // your appKey
+        },
+
         logo: '/icon.png',
         noFoundPageByTencent: false,
         evergreen: false,
@@ -52,9 +57,11 @@ module.exports = {
                 ]
             }
         ],
+
         sidebar: {
             "/study": [
                 {
+                    collapsable: false,
                     title: `论文`,   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
@@ -62,6 +69,7 @@ module.exports = {
                     ]
                 },
                 {
+                    collapsable: false,
                     title: `参考`,   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
@@ -72,6 +80,7 @@ module.exports = {
             ],
             "/docs": [
                 {
+                    collapsable: false,
                     title: '入门',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
@@ -98,8 +107,10 @@ module.exports = {
                 {
                     title: '数据结构',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
+                    
                     children: [
                         {
+                            collapsable: false,
                             title: "接口定义",
                             children: [
                                 '/docs/data-structure/interfaces/ICollection/',
@@ -107,6 +118,7 @@ module.exports = {
                             ]
                         },
                         {
+                            collapsable: false,
                             title: "线性结构",
                             children: [
                                 '/docs/data-structure/linear/ArrayList/',
@@ -117,6 +129,7 @@ module.exports = {
                             ]
                         },
                         {
+                            collapsable: false,
                             title: "非线性结构",
                             children: [
                                 '/docs/data-structure/map/HashMap/',
@@ -125,6 +138,7 @@ module.exports = {
                             ]
                         },
                         {
+                            collapsable: false,
                             title: "迭代",
                             children: [
                                 '/docs/data-structure/iterating/',
@@ -136,7 +150,34 @@ module.exports = {
                     title: '算法',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
+                        
                         '/docs/algorithms/',
+                        '/docs/algorithms/sort/',
+                        {
+                            collapsable: false,
+                            title: "树相关算法",
+                            children: [
+                                '/docs/algorithms/tree/basic/',
+                                '/docs/algorithms/tree/avltree/',
+                                '/docs/algorithms/tree/rbtree/',
+                            ]
+                        },
+                        {
+                            collapsable: false,
+                            title: "图",
+                            children: [
+                                '/docs/algorithms/graph/travel/',
+                                '/docs/algorithms/graph/minimum-spanning-tree/',
+                                '/docs/algorithms/graph/shortest-path/',
+                            ]
+                        },
+                        {
+                            collapsable: false,
+                            title: "特殊问题",
+                            children: [
+                                '/docs/algorithms/special/',
+                            ]
+                        }
                     ]
                 },
                 {

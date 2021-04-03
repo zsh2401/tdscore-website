@@ -80,7 +80,6 @@ module.exports = {
             ],
             "/docs": [
                 {
-                    collapsable: false,
                     title: '入门',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [

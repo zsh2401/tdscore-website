@@ -1,9 +1,12 @@
 ---
 title: 安装
 ---
-# 获取
-**NPM**
+[![NPM version](https://img.shields.io/npm/v/tdscore.svg)](https://www.npmjs.com/package/tdscore)
+![](https://badgen.net/npm/dy/tdscore)
+![](https://img.shields.io/bundlephobia/minzip/tdscore)
 
+# 🧲获取
+**NPM**
 ```sh
 npm i tdscore
 ```
@@ -16,10 +19,10 @@ npm i tdscore
 
 [下载最新版本](https://cdn.jsdelivr.net/npm/tdscore/dist/tdscore.min.js)
 
-# 引入
+# ✍使用
 **ES Module**
 ```typescript
-import {dsHashCode} from "tdscore"
+import { dsHashCode } from "tdscore"
 dsHashCode(1); // 1
 ```
 

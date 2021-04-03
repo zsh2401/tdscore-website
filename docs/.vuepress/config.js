@@ -10,7 +10,7 @@ module.exports = {
         ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
         ['link', { rel: 'mask-icon', href: '/icon-154x154.svg', color: '#92CEF7' }],
         ['meta', { name: 'msapplication-TileImage', content: '/icon-512x512.png' }],
-        ['meta', { name: 'msapplication-TileColor', content: '#92CEF7' }]
+        ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }]
     ],
     plugins: {
         '@vuepress/pwa': {

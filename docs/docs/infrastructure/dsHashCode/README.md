@@ -62,16 +62,23 @@ dsHashCode(new A()); // 2401
 ```
 事实上，有`ECMA Script`的灵活性，当您使用`JavaScript`时，可以用如下方法自定义哈希算法：
 ```javascript
-const a ={}
+const a = {}
 a.getHashCode = function(){
     return 2401;
 }
 
 dsHashCode(a); // 2401
+
+//你甚至可以...
+const f = function(){
+    console.log(a)
+}
+f.getHashCode = ()=> 2402
+dsHashCode(f) // 2402
 ```
 :::tip
 `DSObject`实现了`IHashCodeGettable`接口。
 :::
 ## 污染性
 对于实现了`IHashCodeGettable`的对象以及`Primitive Type`，`dsHashCode`在计算过程中不会留下任何痕迹。   
-但对于其它对象，为了实现`哈希码在整个生命周期不变`这一点，算法不得不在对象中留下痕迹。在`tdscore v0.1.17中`，这个痕迹是一个闭包函数，您可以阅读[相关源代码](https://github.com/zsh2401/tdscore/blob/master/src/util/hash/weekhash.ts)进行进一步了解。
+但对于其它对象，为了实现`哈希码在整个生命周期不变`这一点，算法不得不在对象中留下痕迹。在`tdscore v0.1.17中`，这个痕迹是一个闭包函数，您可以阅读[相关源代码](https://github.com/zsh2401/tdscore/blob/master/src/util/hash/hashCodeForAny.ts)进行进一步了解。

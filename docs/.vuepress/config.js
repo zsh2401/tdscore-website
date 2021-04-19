@@ -2,20 +2,29 @@ module.exports = {
     theme: 'reco',
     title: "TDSCore",
     head: [
-        // ['script', { src: 'https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js' }],
-        // ['script', { src: 'https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js' }],
-        // ['script', { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' }],
-        // ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
-        // ['script', { src: 'https://embed.runkit.com' }]
+        ['link', { rel: 'icon', href: '/icon.png' }],
+        ['link', { rel: 'manifest', href: '/manifest.json' }],
+        ['meta', { name: 'theme-color', content: '#ffffff' }],
+        ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'white' }],
+        ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+        ['link', { rel: 'mask-icon', href: '/icon-154x154.svg', color: '#92CEF7' }],
+        ['meta', { name: 'msapplication-TileImage', content: '/icon-512x512.png' }],
+        ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }]
     ],
-    plugins: [
-        [
-            '@vuepress/google-analytics',
-            {
-                'ga': 'G-J9HN2EWW1H'
+    plugins: {
+        '@vuepress/pwa': {
+            serviceWorker: true,
+            updatePopup: {
+                message: "文档有更新",
+                buttonText: "立刻更新！"
             }
-        ]
-    ],
+        },
+        '@vuepress/google-analytics': {
+            'ga': 'G-J9HN2EWW1H'
+        }
+    },
+
     themeConfig: {
         // 博客配置
         blogConfig: {
@@ -28,6 +37,11 @@ module.exports = {
             //     text: 'Tag'      // 默认文案 “标签”
             // }
         },
+        valineConfig: {
+            appId: 'qaSn1lMJlYsX4v3eb9u8lFD4-gzGzoHsz',// your appId
+            appKey: 't6NmGFxNT0mbeUHwVRTK0nKc', // your appKey
+        },
+
         logo: '/icon.png',
         noFoundPageByTencent: false,
         evergreen: false,
@@ -57,9 +71,11 @@ module.exports = {
                 ]
             }
         ],
+
         sidebar: {
             "/study": [
                 {
+                    collapsable: false,
                     title: `论文`,   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
@@ -67,6 +83,7 @@ module.exports = {
                     ]
                 },
                 {
+                    collapsable: false,
                     title: `参考`,   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
@@ -89,7 +106,6 @@ module.exports = {
                     title: '基建',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
-                        // '/docs/infrastructure/',
                         '/docs/infrastructure/dsHashCode/',
                         '/docs/infrastructure/dsEquals/',
                         '/docs/infrastructure/DSObject/',
@@ -104,21 +120,77 @@ module.exports = {
                 {
                     title: '数据结构',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
+
                     children: [
-                        '/docs/data-structure/ArrayList/',
-                        '/docs/data-structure/LinkedList/',
-                        '/docs/data-structure/GList/',
-                        '/docs/data-structure/BitSpan/',
-                        '/docs/data-structure/HashMap/',
-                        '/docs/data-structure/Tree/',
-                        '/docs/data-structure/Graph/',
+                        {
+                            collapsable: false,
+                            title: "接口定义",
+                            children: [
+                                '/docs/data-structure/interfaces/ICollection/',
+                                '/docs/data-structure/interfaces/IList/',
+                            ]
+                        },
+                        {
+                            collapsable: false,
+                            title: "线性结构",
+                            children: [
+                                '/docs/data-structure/linear/ArrayList/',
+                                '/docs/data-structure/linear/LinkedList/',
+                                '/docs/data-structure/linear/GList/',
+                                '/docs/data-structure/linear/BitSpan/',
+                                '/docs/data-structure/linear/UngrowableArrayList/',
+                            ]
+                        },
+                        {
+                            collapsable: false,
+                            title: "非线性结构",
+                            children: [
+                                '/docs/data-structure/map/HashMap/',
+                                '/docs/data-structure/tree/',
+                                '/docs/data-structure/graph/',
+                            ]
+                        },
+                        {
+                            collapsable: false,
+                            title: "迭代",
+                            children: [
+                                '/docs/data-structure/iterating/',
+                            ]
+                        },
                     ]
                 },
                 {
                     title: '算法',   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
+
                         '/docs/algorithms/',
+                        '/docs/algorithms/sort/',
+                        {
+                            collapsable: false,
+                            title: "树相关算法",
+                            children: [
+                                '/docs/algorithms/tree/basic/',
+                                '/docs/algorithms/tree/avltree/',
+                                '/docs/algorithms/tree/rbtree/',
+                            ]
+                        },
+                        {
+                            collapsable: false,
+                            title: "图",
+                            children: [
+                                '/docs/algorithms/graph/travel/',
+                                '/docs/algorithms/graph/minimum-spanning-tree/',
+                                '/docs/algorithms/graph/shortest-path/',
+                            ]
+                        },
+                        {
+                            collapsable: false,
+                            title: "特殊问题",
+                            children: [
+                                '/docs/algorithms/special/',
+                            ]
+                        }
                     ]
                 },
                 {

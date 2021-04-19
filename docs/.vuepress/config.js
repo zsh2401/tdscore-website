@@ -9,7 +9,12 @@ module.exports = {
         // ['script', { src: 'https://embed.runkit.com' }]
     ],
     plugins: [
-        // 'demo-block'
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'G-J9HN2EWW1H'
+            }
+        ]
     ],
     themeConfig: {
         // 博客配置
@@ -53,7 +58,7 @@ module.exports = {
             }
         ],
         sidebar: {
-            "/study":[
+            "/study": [
                 {
                     title: `论文`,   // 必要的
                     sidebarDepth: 2,    // 可选的, 默认值是 1

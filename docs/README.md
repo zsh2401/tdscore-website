@@ -9,9 +9,9 @@ features:
     - title: 💦超强兼容性
       details: 运行在96%+的平台
     - title: 🤏超小的体积
-      details: 压缩后仅19kB
-    - title: ⚡全面的ES增强
-      details: 为ES标准提供了大量拓展
+      details: 压缩后小于30kB
+    - title: ⚡持续更新
+      details: 为研习而生
 
 footer: MulanPSL2 Licensed | Copyright © 2021-present Seymour Zhang
 
@@ -29,15 +29,18 @@ footer: MulanPSL2 Licensed | Copyright © 2021-present Seymour Zhang
 
 </div>
 
-# WOW📢
+# Wow📢
 ```typescript
+import { LinkedList, HashMap } from "tdscore"
+
 //TypeScript
 let hashMap = new HashMap<string,number>();
-//ECMAScript 5
-var hashMap = new HashMap();
-
 hashMap.mapPut("a",1);
 console.log(hashMap.mapGet("a")); // 1
+
+let list = new LinkedList<number>()
+list.listAdd(0)
+console.log(list.listGet(0)) // 0
 ```
 # 在线试用
 [Try TDSCore on RunKit](https://npm.runkit.com/tdscore)

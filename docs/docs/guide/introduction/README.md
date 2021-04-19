@@ -49,7 +49,7 @@ TDSCore在2020年7月正式开始编写，最初的目的为实践数据结构�
 
 |  Logo    |  名称     | 备注 |
 | ---- | ---- | ---- |
-| <img src="https://playground.zsh2401.top/favicon.ico" width="50px"/> | [Seymour Zhang's Computer Science Playground](https://playground.zsh2401.top) | 使用TDSCore进行二维绘图，计算线性变换|
+| <img src="https://playground.zsh2401.top/assets/icons/icon.png" width="50px"/> | [Seymour Zhang's Computer Science Playground](https://playground.zsh2401.top) | 使用TDSCore进行二维绘图，计算线性变换|
 |  | [tdscore-app-template](https://github.com/zsh2401/tdscore-app-template) | 专为TDSCore设计的应用模板 | 
 
 

@@ -122,10 +122,12 @@ module.exports = {
                     sidebarDepth: 2,    // 可选的, 默认值是 1
 
                     children: [
+                        "/docs/data-structure/",
                         {
                             collapsable: false,
                             title: "接口定义",
                             children: [
+                                '/docs/data-structure/interfaces/IIterable/',
                                 '/docs/data-structure/interfaces/ICollection/',
                                 '/docs/data-structure/interfaces/IList/',
                             ]
@@ -154,7 +156,7 @@ module.exports = {
                             collapsable: false,
                             title: "迭代",
                             children: [
-                                '/docs/data-structure/iterating/',
+                                '/docs/data-structure/ixa/',
                             ]
                         },
                     ]
